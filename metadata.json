@@ -1,0 +1,6 @@
+{
+  "name": "DevGive - Developer Source Code Sharing Platform",
+  "description": "DevGive is a developer platform for sharing original source code projects, donations, wishlist management, and video-based free downloads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

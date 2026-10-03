@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.bg-grid-pattern {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(203, 213, 225, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.35) 1px, transparent 1px);
+}
+
+/* Subtle scrollbar design */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+  }
+  header, footer, aside, nav, button:not(.print-keep), .no-print {
+    display: none !important;
+  }
+  #printable-receipt {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+}
